@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DownloadKit'
-    s.version          = '0.0.3'
+    s.version          = '0.0.4'
     s.summary          = 'URLSession wrapper for downloading images and JSON.'
     s.description      = <<-DESC
     A simple wrapper for URLSession that allows easy downloading of Images and JSON. Comes with a configurable in-memory cache.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/moizullah/DownloadKit.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/moizullahamir'
     
-    s.ios.deployment_target = '11.0'
+    s.ios.deployment_target = '10.0'
     s.swift_version = '4.2'
     
     s.source_files = 'DownloadKit/Classes/**/*'

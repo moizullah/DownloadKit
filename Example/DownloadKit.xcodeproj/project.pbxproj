@@ -10,7 +10,6 @@
 		4C04283D028865DE851AD603 /* Pods_DownloadKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0BE736D839DF75C90B66FA /* Pods_DownloadKit_Tests.framework */; };
 		5B7D0DAA99E8E6C2F7700C5B /* Pods_DownloadKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1E7F30D77BCE59D16A6C72 /* Pods_DownloadKit_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		61E8826E21E759F200C58D88 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8826D21E759F200C58D88 /* ImageCollectionViewController.swift */; };
 		61E8827021E759FE00C58D88 /* JsonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8826F21E759FE00C58D88 /* JsonModels.swift */; };
@@ -43,7 +42,6 @@
 		607FACD01AFB9204008FA782 /* DownloadKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* DownloadKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,12 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				61E8826D21E759F200C58D88 /* ImageCollectionViewController.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				61E8826F21E759FE00C58D88 /* JsonModels.swift */,
+				61A668D721E789CD007706C7 /* Controllers */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				61A668D821E789D5007706C7 /* Models */,
 				61E8827121E75A0A00C58D88 /* Nibs */,
 				61E8827821E75A3200C58D88 /* Storyboards */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for DownloadKit";
@@ -144,8 +141,8 @@
 			children = (
 				61E8827F21E75B6400C58D88 /* DownloadKitTests.swift */,
 				61E8828021E75B6400C58D88 /* ModelTests.swift */,
-				61E8828121E75B6500C58D88 /* TaskManagerTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				61E8828121E75B6500C58D88 /* TaskManagerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -166,6 +163,22 @@
 				77BD6245DD5A933C7996D17F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		61A668D721E789CD007706C7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61E8826D21E759F200C58D88 /* ImageCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		61A668D821E789D5007706C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61E8826F21E759FE00C58D88 /* JsonModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		61E8827121E75A0A00C58D88 /* Nibs */ = {
@@ -380,7 +393,6 @@
 				61E8827021E759FE00C58D88 /* JsonModels.swift in Sources */,
 				61E8827721E75A0A00C58D88 /* LoadingIndicator.swift in Sources */,
 				61E8827621E75A0A00C58D88 /* LoadingFooterCollectionReusableView.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -520,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -535,6 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J59282KVRA;
 				INFOPLIST_FILE = DownloadKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -550,6 +563,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J59282KVRA;
 				INFOPLIST_FILE = DownloadKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
