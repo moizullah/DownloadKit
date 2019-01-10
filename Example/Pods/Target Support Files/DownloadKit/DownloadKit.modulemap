@@ -1,0 +1,6 @@
+framework module DownloadKit {
+  umbrella header "DownloadKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

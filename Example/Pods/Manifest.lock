@@ -1,0 +1,16 @@
+PODS:
+  - DownloadKit (0.1.0)
+
+DEPENDENCIES:
+  - DownloadKit (from `../`)
+
+EXTERNAL SOURCES:
+  DownloadKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DownloadKit: af29b889574c192982282ebb86e0157bc3089080
+
+PODFILE CHECKSUM: 9681693c0fd8b0321cfa8db5065ca145e635111f
+
+COCOAPODS: 1.5.3

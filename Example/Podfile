@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DownloadKit_Example' do
+  pod 'DownloadKit', :path => '../'
+
+  target 'DownloadKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
