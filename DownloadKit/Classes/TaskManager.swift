@@ -1,6 +1,6 @@
 //
 //  Downloader.swift
-//  DownloadKitExample
+//  DownloadKit
 //
 //  Created by Moiz on 08/01/2019.
 //  Copyright © 2019 Moiz Ullah. All rights reserved.
@@ -27,7 +27,7 @@ class TaskManager {
     
     
     // MARK: - Methods
-
+    
     /// Add a DownloadKitTask for a given URLRequest to this TaskManager.
     ///
     /// - Parameters:
@@ -96,7 +96,7 @@ class TaskManager {
         }
     }
     
-
+    
     /// Calls all handlers for a given request, passing them any data or error
     /// that was provided. Once all handlers have been called, the request is removed
     /// from the list of active requests.

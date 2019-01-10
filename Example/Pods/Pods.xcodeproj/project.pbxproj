@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		18614736328A88AC449D83D63E893DF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		61E8826921E755EC00C58D88 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8826621E755EB00C58D88 /* Models.swift */; };
-		61E8826A21E755EC00C58D88 /* DownloadKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8826721E755EB00C58D88 /* DownloadKit.swift */; };
-		61E8826B21E755EC00C58D88 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E8826821E755EB00C58D88 /* TaskManager.swift */; };
+		61A668D021E77269007706C7 /* DownloadKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A668CF21E77269007706C7 /* DownloadKit.swift */; };
+		61A668D221E77296007706C7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A668D121E77296007706C7 /* Models.swift */; };
+		61A668D421E772B6007706C7 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A668D321E772B6007706C7 /* TaskManager.swift */; };
 		7795E20D9A23C6D529E3A5918E11FB59 /* DownloadKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7A87BAFF4A5F6E12EC5E354D9085A9 /* DownloadKit-dummy.m */; };
 		84D7648530EF301805C1E18D6952844B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		956495BFAD3A2352D434A20C9D9A0C79 /* DownloadKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6238C55B9B2D31C53EF746CE7536889F /* DownloadKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,9 +50,9 @@
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5E3AA046AFDB5144075E01902A6B3D22 /* Pods-DownloadKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DownloadKit_Example.modulemap"; sourceTree = "<group>"; };
 		5FE52C73EE3655B9DA542ECC0454F39A /* Pods-DownloadKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DownloadKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		61E8826621E755EB00C58D88 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		61E8826721E755EB00C58D88 /* DownloadKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadKit.swift; sourceTree = "<group>"; };
-		61E8826821E755EB00C58D88 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		61A668CF21E77269007706C7 /* DownloadKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DownloadKit.swift; path = DownloadKit/Classes/DownloadKit.swift; sourceTree = "<group>"; };
+		61A668D121E77296007706C7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Models.swift; path = DownloadKit/Classes/Models.swift; sourceTree = "<group>"; };
+		61A668D321E772B6007706C7 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskManager.swift; path = DownloadKit/Classes/TaskManager.swift; sourceTree = "<group>"; };
 		61E8828521E75CAB00C58D88 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6238C55B9B2D31C53EF746CE7536889F /* DownloadKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DownloadKit-umbrella.h"; sourceTree = "<group>"; };
 		64962577661120D89C82FBC2BDE7FEAD /* Pods-DownloadKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DownloadKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -225,9 +225,9 @@
 		FF8AB7C37EF9CEA7259723E918945A33 /* DownloadKit */ = {
 			isa = PBXGroup;
 			children = (
-				61E8826721E755EB00C58D88 /* DownloadKit.swift */,
-				61E8826621E755EB00C58D88 /* Models.swift */,
-				61E8826821E755EB00C58D88 /* TaskManager.swift */,
+				61A668CF21E77269007706C7 /* DownloadKit.swift */,
+				61A668D121E77296007706C7 /* Models.swift */,
+				61A668D321E772B6007706C7 /* TaskManager.swift */,
 				AB68F0751E4A0EC7D341DA691976090B /* Pod */,
 				C32550D9F6F5268F7CCF81706D3456EC /* Support Files */,
 			);
@@ -399,10 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A668D221E77296007706C7 /* Models.swift in Sources */,
+				61A668D021E77269007706C7 /* DownloadKit.swift in Sources */,
+				61A668D421E772B6007706C7 /* TaskManager.swift in Sources */,
 				7795E20D9A23C6D529E3A5918E11FB59 /* DownloadKit-dummy.m in Sources */,
-				61E8826921E755EC00C58D88 /* Models.swift in Sources */,
-				61E8826B21E755EC00C58D88 /* TaskManager.swift in Sources */,
-				61E8826A21E755EC00C58D88 /* DownloadKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

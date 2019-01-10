@@ -1,6 +1,6 @@
 //
 //  DownloadKit.swift
-//  DownloadKitExample
+//  DownloadKit
 //
 //  Created by Moiz on 07/01/2019.
 //  Copyright © 2019 Moiz Ullah. All rights reserved.
@@ -26,7 +26,7 @@ public class DownloadKit {
     var _taskManager = TaskManager()
     
     // MARK: - Static properties
-
+    
     /// Default Cache size is 150 MBs
     public static let DEFAULT_CACHE_SIZE = 150 * 1024 * 1024
     public static var shared = DownloadKit(memorySize: DownloadKit.DEFAULT_CACHE_SIZE)
@@ -49,7 +49,7 @@ public class DownloadKit {
     
     
     // MARK: - Public Methods
-
+    
     /// Cancels the request inside the given reference by removing the completion handler
     /// from the list of handlers for that request. If no other handlers exist then the request
     /// is also cancelled.
@@ -91,7 +91,7 @@ public class DownloadKit {
         
         return RequestReference(request: request, requestID: requestID)
     }
-
+    
     
     /// Creates a data download request to the given URL. The raw data from the response is parsed
     /// to a UIImage instance and returned via the completion block. Use this method for downloading
@@ -158,7 +158,7 @@ public class DownloadKit {
     }
     
     // MARK: - Methods
-
+    
     
     /// This method is what is used under the hood for all download requests created with DownloadKit.
     /// This method creates the actual download request using URLSession and informs the TaskManager
@@ -195,7 +195,7 @@ public class DownloadKit {
             guard let `self` = self else {
                 return
             }
-
+            
             guard error == nil else {
                 // (3)
                 self._taskManager.callHandlers(for: request, data: nil, error: error)
