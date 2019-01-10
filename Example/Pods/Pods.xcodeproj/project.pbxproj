@@ -123,16 +123,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		61E8826C21E756EF00C58D88 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				61E8826721E755EB00C58D88 /* DownloadKit.swift */,
-				61E8826621E755EB00C58D88 /* Models.swift */,
-				61E8826821E755EB00C58D88 /* TaskManager.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +225,9 @@
 		FF8AB7C37EF9CEA7259723E918945A33 /* DownloadKit */ = {
 			isa = PBXGroup;
 			children = (
-				61E8826C21E756EF00C58D88 /* Classes */,
+				61E8826721E755EB00C58D88 /* DownloadKit.swift */,
+				61E8826621E755EB00C58D88 /* Models.swift */,
+				61E8826821E755EB00C58D88 /* TaskManager.swift */,
 				AB68F0751E4A0EC7D341DA691976090B /* Pod */,
 				C32550D9F6F5268F7CCF81706D3456EC /* Support Files */,
 			);
